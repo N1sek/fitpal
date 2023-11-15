@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&family=Roboto:wght@300;400&display=swap');
+
+*{
+    --dark-gray: #222323;
+    --purple: #a238ff;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Questrial', sans-serif;
+    color: white;
+}
+
+html {
+    scroll-padding-top: 70px;
+    scroll-behavior: smooth;
+  }
+
+header{
+    background-color: var(--dark-gray);
+    display: flex;
+    /*Fixed nav-bar*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    height: 70px;
+    font-size: large;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 4rem;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+header button{
+    background-color: #a238ff;
+    border: none;
+    border-radius: 20px;
+    padding: 0.6rem 1rem;
+    font-size: large;
+    cursor: pointer;
+    box-shadow: #a238ff 0px 0px 20px;
+}
+.logo{
+    vertical-align: middle;
+}
+
+section{
+    height: 100vh;
+
+
+}
+#inicio{
+    background-image: url(../img/canvas.png);
+    background-size: cover;
+    margin-top: 50px;
+}
+#caracteristicas{
+    background-color: var(--dark-gray);
+    background-image: url(../img/onda.png);
+}
+#funcionalidad{
+    background-image: url(../img/blur-bg.png);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px){
+    header{
+        background-color: var(--dark-gray);
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        
+    }
+    header nav ul li{
+        display: none;
+    }
+    header nav button {
+        display: none;
+    }
+    /*Center logo*/
+    .logo{
+        margin: 0 auto;
+    }
+}
