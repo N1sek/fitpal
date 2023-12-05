@@ -12,99 +12,61 @@
 }
 
 html {
-    scroll-padding-top: 70px;
     scroll-behavior: smooth;
-  }
+}
 
-header{
-    background-color: var(--dark-gray);
+body{
+    padding-top: 20px;
+}
+
+/* ---------- MENU ----------- */
+nav a{
     display: flex;
-    /*Fixed nav-bar*/
+    align-items: center;
+    margin-left: 40px;
+}
+nav a svg {
+    margin-right: 10px;
+}
+
+nav{
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
+    width: 100%;
+    background-color: var(--dark-gray);
     z-index: 100;
-    height: 70px;
-    font-size: large;
-}
-
-header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    padding: 1rem 4rem;
+    padding: 20px 0;
 }
 
-header nav ul li {
-    display: inline-block;
-    margin: 0 1rem;
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
-header button{
-    background-color: #a238ff;
-    border: none;
-    border-radius: 20px;
-    padding: 0.6rem 1rem;
-    font-size: large;
+nav ul li{
+    padding-right: 30px;
+    font-weight: bold;
+}
+
+nav ul li:first-child a{
+    color: #ab4bff;
+}
+
+nav button {
+    margin-right: 40px;
     cursor: pointer;
-    box-shadow: #a238ff 0px 0px 20px;
-}
-.logo{
-    vertical-align: middle;
-}
-
-section{
-    height: 100vh;
-
-
-}
-#inicio{
-    background-image: url(../img/canvas.png);
-    background-size: cover;
-    margin-top: 50px;
-}
-#caracteristicas{
-    background-color: var(--dark-gray);
-    background-image: url(../img/onda.png);
-}
-#funcionalidad{
-    background-image: url(../img/blur-bg.png);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 768px){
-    header{
-        background-color: var(--dark-gray);
-        display: flex;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 100;
-        
-    }
-    header nav ul li{
-        display: none;
-    }
-    header nav button {
-        display: none;
-    }
-    /*Center logo*/
-    .logo{
-        margin: 0 auto;
-    }
+    background-color: var(--purple);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: medium;
+    box-shadow: #a238ff 0px 0px 15px;
 }

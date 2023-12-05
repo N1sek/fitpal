@@ -10,9 +10,9 @@
 
     <header>
         <!-- Nav Bar -->
-        <nav id="nav-bar">
+        <nav>
             <!-- Logo -->
-            <a href="#inicio" class="logo">
+            <a href="#inicio">
                 <svg class="logo preserveAspectRatio="xMidYMid meet" data-bbox="20.2 61.5 159.6 77" viewBox="20.2 61.5 159.6 77" height="30" width="30" xmlns="http://www.w3.org/2000/svg" data-type="color" role="presentation" aria-hidden="true" aria-label="">
                     <g>
                         <path d="M149.1 61.5c-4.3 0-7.7 3.4-7.7 7.7v23.1H58.6V69.2c0-4.3-3.5-7.7-7.7-7.7s-7.7 3.4-7.7 7.7v61.6c0 4.3 3.5 7.7 7.7 7.7s7.7-3.4 7.7-7.7v-23.1h82.8v23.1c0 4.3 3.4 7.7 7.7 7.7s7.7-3.4 7.7-7.7V69.2c0-4.3-3.4-7.7-7.7-7.7z" fill="#7362DF" data-color="1"></path>
@@ -33,8 +33,6 @@
 
             <!-- Boton de descarga -->
             <button>Descargar</button>
-
-
         </nav>
     </header>
     
@@ -42,97 +40,100 @@
     <!-- Main section -->
     <main>
         <section id="inicio">
-
-            <h2>Controla tu nutricion</h2>
-            <h1>FitPal</h1>
-            <p>Diseñado para ser facil de usar y extremadamente customizable</p>
-            <button>App Store</button>
-            <button>Google Play</button>
-
-            <img src="img/iphone.webp" alt="Iphone">
-
+            <section id="column-1">
+                <h2>Controla tu nutricion</h2>
+                <h1 style="font-size: 75px;">FitPal</h1>
+                <p>Diseñado para ser facil de usar y extremadamente customizable</p>
+                <button></button>
+                <button>Google Play</button>
+            </section>
+            <section id="column-2">
+                <img src="img/iphone.webp" alt="Iphone" width="250px" height="450px">
+            </section>
         </section>
 
         <!--Caracteristicas-->
-        <section id="caracteristicas">
-            <h2>Caracteristicas</h2>
-
-            <div class="box">
-                <h3>Widgets</h3>
-                <img src="" alt="">
-            </div>
-
-            <div class="box">
-                <img src="" alt="">
-            </div>
-
-
-            <div class="box">
-                <h3>Sincronizacion</h3>
-                <img src="" alt="">
-            </div>
-
-
-            <div class="box">
-                <h3>Notificaciones</h3>
-                <img src="" alt="">
-            </div>
-
-
-            <div class="box">
-                <h3>Estadisticas</h3>
-                <img src="" alt="">
-            </div>
-
-
-            <div class="box">
-                <h3>Personalizacion</h3>
-                <img src="" alt="">
-            </div>
-
-
-            <div class="box">
-                <h3>Comunidad</h3>
-                <img src="" alt="">
-            </div>
-        </section>
+        <div id="wrapper">
+            <section id="caracteristicas">
+                <h2>Caracteristicas</h2>
+    
+                <section class="rc-box">
+                    <h3>Widgets</h3>
+                    <img src="" alt="">
+                </section>
+    
+                <section class="sq-box">
+                    <img src="" alt="">
+                </section>
+    
+    
+                <section class="rc-box">
+                    <h3>Sincronizacion</h3>
+                    <img src="" alt="">
+                </section>
+    
+    
+                <section class="sq-box">
+                    <h3>Notificaciones</h3>
+                    <img src="" alt="">
+                </section>
+    
+    
+                <section class="box">
+                    <h3>Estadisticas</h3>
+                    <img src="" alt="">
+                </section>
+    
+    
+                <section class="box">
+                    <h3>Personalizacion</h3>
+                    <img src="" alt="">
+                </section>
+    
+    
+                <section class="box">
+                    <h3>Comunidad</h3>
+                    <img src="" alt="">
+                </section>
+            </section>
+        </div>
 
         <!--Funcionalidad-->
         <section id="funcionalidad">
             <h2>Funcionalidad</h2>
-            <div class="texto-funciones">
+            <section class="texto-funciones">
                 <h3>Lorem Ipsum</h3>
                 <p></p>
-            </div>
+            </section>
             <img src="" alt="">
-            <div class="texto-funciones">
+            <section class="texto-funciones">
                 <h3>Lorem Ipsum</h3>
                 <p></p>
-            </div>
-            <div class="texto-funciones">
+            </section>
+            <section class="texto-funciones">
                 <h3>Lorem Ipsum</h3>
                 <p></p>
-            </div>
+            </section>
         </section>
 
         <!--Suscripciones-->
         <section id="suscripciones">
             <h2>Suscripciones</h2>
-            <div class="box">
+            <section class="box">
                 <h3>Gratis</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
                 <button>Comprar</button>
-            </div>
-            <div class="box">
+            </section>
+            <section class="box">
                 <h3>Premium</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
                 <button>Comprar</button>
-            </div>
-            <div class="box">
+            </section>
+            <section class="box">
                 <h3>Familiar</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
                 <button>Comprar</button>
-            </div>
+            </section>
         </section>
 
         <!--Descarga-->
