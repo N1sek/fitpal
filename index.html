@@ -10,7 +10,7 @@
 
     <header>
         <!-- Nav Bar -->
-        <nav>
+        <nav class="navbar">
             <!-- Logo -->
             <a href="#inicio">
                 <svg class="logo preserveAspectRatio="xMidYMid meet" data-bbox="20.2 61.5 159.6 77" viewBox="20.2 61.5 159.6 77" height="30" width="30" xmlns="http://www.w3.org/2000/svg" data-type="color" role="presentation" aria-hidden="true" aria-label="">
@@ -39,67 +39,65 @@
 
     <!-- Main section -->
     <main>
-        <section id="inicio">
-            <section id="column-1">
+        <section id="inicio" class="secciones">
+            <section id="col-1" class="cols">
                 <h2>Controla tu nutricion</h2>
                 <h1 style="font-size: 75px;">FitPal</h1>
                 <p>Diseñado para ser facil de usar y extremadamente customizable</p>
-                <button></button>
-                <button>Google Play</button>
+                <button><img src="./img/appstore.png" alt="AppStore" width="200px" height="70px"></button>
+                <button><img src="./img/googleplay.png" alt="PlayStore" width="200px" height="75px"></button>
             </section>
-            <section id="column-2">
+            <section id="col-2" class="cols">
                 <img src="img/iphone.webp" alt="Iphone" width="250px" height="450px">
             </section>
         </section>
 
         <!--Caracteristicas-->
-        <div id="wrapper">
-            <section id="caracteristicas">
-                <h2>Caracteristicas</h2>
-    
-                <section class="rc-box">
-                    <h3>Widgets</h3>
-                    <img src="" alt="">
-                </section>
-    
-                <section class="sq-box">
-                    <img src="" alt="">
-                </section>
-    
-    
-                <section class="rc-box">
-                    <h3>Sincronizacion</h3>
-                    <img src="" alt="">
-                </section>
-    
-    
-                <section class="sq-box">
-                    <h3>Notificaciones</h3>
-                    <img src="" alt="">
-                </section>
-    
-    
-                <section class="box">
-                    <h3>Estadisticas</h3>
-                    <img src="" alt="">
-                </section>
-    
-    
-                <section class="box">
-                    <h3>Personalizacion</h3>
-                    <img src="" alt="">
-                </section>
-    
-    
-                <section class="box">
-                    <h3>Comunidad</h3>
-                    <img src="" alt="">
-                </section>
+        <section id="caracteristicas" class="secciones">
+            <h2>Caracteristicas</h2>
+
+            <section class="rc-box">
+                <h3>Widgets</h3>
+                <img src="" alt="">
             </section>
-        </div>
+
+            <section class="sq-box">
+                <img src="" alt="">
+            </section>
+
+
+            <section class="rc-box">
+                <h3>Sincronizacion</h3>
+                <img src="" alt="">
+            </section>
+
+
+            <section class="sq-box">
+                <h3>Notificaciones</h3>
+                <img src="" alt="">
+            </section>
+
+
+            <section class="box">
+                <h3>Estadisticas</h3>
+                <img src="" alt="">
+            </section>
+
+
+            <section class="box">
+                <h3>Personalizacion</h3>
+                <img src="" alt="">
+            </section>
+
+
+            <section class="box">
+                <h3>Comunidad</h3>
+                <img src="" alt="">
+            </section>
+        </section>
 
         <!--Funcionalidad-->
-        <section id="funcionalidad">
+        <section id="funcionalidad" class="secciones">
             <h2>Funcionalidad</h2>
             <section class="texto-funciones">
                 <h3>Lorem Ipsum</h3>
@@ -117,7 +115,7 @@
         </section>
 
         <!--Suscripciones-->
-        <section id="suscripciones">
+        <section id="suscripciones" class="secciones">
             <h2>Suscripciones</h2>
             <section class="box">
                 <h3>Gratis</h3>
@@ -137,7 +135,7 @@
         </section>
 
         <!--Descarga-->
-        <section id="descarga">
+        <section id="descarga" class="secciones">
             <h2>Descarga</h2>
 
             <img src="" alt="">
@@ -156,6 +154,21 @@
         </section>
     </footer>
 
+    <script>
+        
+        // Ajustar el body para que no se solape con el navbar, para no tener que ajustar el padding cada vez que se cambie la altura del nav
+        function adjust_body_offset() {
+            let box = document.querySelector('.navbar');
+            let width = box.offsetWidth;
+            let height = box.offsetHeight;
+            //console.log({ width, height });
+            document.querySelector('body').style.paddingTop = box.offsetHeight + 'px'; //Padding del body
+            document.querySelector('html').style.scrollPaddingTop = box.offsetHeight + 'px'; //Ajustar el scroll de los anclas
+        }
+
+        window.addEventListener('resize', adjust_body_offset);
+        window.addEventListener('DOMContentLoaded', adjust_body_offset);
+    </script>
     
 </body>
 </html>
